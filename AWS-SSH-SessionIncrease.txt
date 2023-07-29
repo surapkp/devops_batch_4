@@ -1,0 +1,8 @@
+set following values vim /etc/ssh/sshd_config
+ClientAliveInterval 60
+ClientAliveCountMax 3
+
+remove # before both the lines 
+save the file 
+and then run 
+systemctl restart sshd
