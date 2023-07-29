@@ -2,3 +2,5 @@ git init
 git add
 git push
 git origin
+git clone
+git remote -v
