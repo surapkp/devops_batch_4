@@ -1,1 +1,3 @@
-This is a cool featrures
+This is a cool featrure
+
+Added mored fu nction on featrure 1s
