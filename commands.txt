@@ -5,3 +5,5 @@ git log
 git pull
 git push
 git remote -v
+git fetch
+
