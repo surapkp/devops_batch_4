@@ -4,5 +4,4 @@ git push
 git origin
 git remote -v
 git clone
-git status
-git remote --v
+
