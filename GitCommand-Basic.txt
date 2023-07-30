@@ -1,0 +1,156 @@
+/home/ubuntu/devops-batch-4
+
+devops-batch-4
+
+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
+
+Git hub command ----------------29/07/2023
+
+85  mkdir devops-batch-4
+  386  ls
+  387  cd devops-batch-4/
+  388  touch commands.txt
+  389  ls
+  390  ls -l commands.txt
+  391  ls
+  392  rm commands.txt
+  393  ls
+  394  touch commands.txt
+  395  cd ..
+  396  ls
+  397  pwd
+  398  cd devops-batch-4/
+  399  ls
+  400  git init
+  401  ls
+  402  git status
+  403  git add commands.txt
+  404  git status
+  405  git commit -m "adding commands"
+  406  git status
+  407  ls
+  408  rm commands.txt
+  409  ls
+  410  git status
+  411  git restore commands.txt
+  412  ls
+  413  git log
+  414  ls -l commands.txt
+  415  vim commands.txt
+  416  ls
+  417  git status
+  418  git add commands.txt
+  419  git status
+  420  git commit -m "added new commands"
+  421  git status
+  422  git log
+  423  git log --pretty
+  424  git log --oneline
+  425  git log --oneline --pretty
+  426  git clear
+  427  clear
+  428  git log
+  429  git log --pretty
+  430  git log --oneline
+  431  git log --oneline --pretty
+  432  clear
+  433  ls
+  434  git log
+  435  git config --global user.name "LondheShubham153"
+  436  git config --global user.email "shubhamnath5@gmail.com"
+  437  vim commands.txt
+  438  ls
+  439  git status
+  440  git add commands.txt
+  441  git commit -m "added even more commands"
+  442  git log
+  443  git log --oneline
+  444  vim README.md
+  445  ls
+  446  git status
+  447  git add README.md
+  448  git status
+  449  git commit -m "added Readme file"
+  450  git log
+  451  git log --oneline
+  452  git log --oneline --pretty
+  453  clear
+  454  ls
+  455  git status
+  456  git checkout -b dev
+  457  git status
+  458  git log
+  459  vim commands.txt
+  460  git status
+  461  git add commands.txt
+  462  git status
+  463  git commit -m "Added dev branch changes"
+  464  git log
+  465  cat commands.txt
+  466  git checkout master
+  467  cat commands.txt
+  468  git branch
+  469  git checkout dev
+  470  git branch
+  471  cat commands.txt
+  472  git status
+  473  cd ..
+  474  git status
+  475  clear
+  476  ls
+  477  mkdir deepak-git-profile
+  478  cd deepak-git-profile/
+  479  ls
+  480  git status
+  481  git clone https://github.com/deepak4devops/devops-batch-4.git
+  482  ls
+  483  cd devops-batch-4/
+  484  git status
+  485  ls
+  486  cat commands.txt
+  487  git status
+  488  cd ..
+  489  git status
+  490  git clone https://github.com/LondheShubham153/90DaysOfDevOps.git
+  491  ls
+  492  cd devops-batch-4/
+  493  ls
+  494  clea
+  495  clear
+  496  ls
+  497  git status
+  498  git remote -v
+  499  git log --oneline
+  500  cat commands.txt
+  501  git status
+  502  cat commands.txt
+  503  git pull origin main
+  504  cat commands.txt
+  505  vim commands.txt
+  506  git status
+  507  git add commands.txt
+  508  git commit -m "added new commands from local"
+  509  git log
+  510  git status
+  511  git push origin main
+  512  clear
+  513  git remote -v
+  514  git fetch
+  515  git remote -v
+  516  git remote set-url origin
+  517  git remote set-url --push origin https://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@github.com/deepak4devops/devops-batch-4.git https://github.com/deepak4devops/devops-batch-4.git
+  518  git remote -vv
+  519  git remote -v
+  520  git remote set-url [--push] origin https://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@github.com/deepak4devops/devops-batch-4.git [https://github.com/deepak4devops/devops-batch-4.git]
+  521  git remote set-url --add origin https://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@github.com/deepak4devops/devops-batch-4.git
+  522  git remote -v
+  523  git remote set-url --delete origin https://github.com/deepak4devops/devops-batch-4.git
+  524  clear
+  525  git remote -v
+  526  git push origin main
+  527  clear
+  528  ls
+  529  git remote -v
+  530  git remote --set-url
+  531  clear
+  532  history

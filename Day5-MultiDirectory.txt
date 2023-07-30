@@ -1,0 +1,24 @@
+#!/bin/bash
+
+#taking three arguments (one is directory name and second is start number of directories and third is the end number of directories)
+
+read -p "Enter name of directory: " directory_name
+read -p "Enter start number of directory: " directory_snum
+read -p "Enter end number of directory: " directory_enum
+
+#For Loop start
+
+for ((i=directory_snum; i<=directory_enum; i++));
+do
+        #create the directory froom start and end number
+        string="${directory_name}-${i}"
+        mkdir $string
+        echo "Directory is created as below: $string"
+done
+echo "Directories created successfully"
+
+sudo adduser user1
+sudo adduser user2
+1. To list out all the users in Linux, use the awk command with -F option. Here, we are accessing a file and printing only first column with the help of print $1 and awk. 
+
+awk -F':' '{ print $1}' /etc/passwd
