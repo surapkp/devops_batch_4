@@ -1,0 +1,9 @@
+git init
+git add
+git status
+git log
+git pull
+git push
+git remote -v
+git fetch
+
