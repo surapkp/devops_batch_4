@@ -7,4 +7,5 @@ git push
 git remote -v
 git fetch
 git log -oneline
-git remote set-url --add orgin 
+git remote set-url --add origin
+git remote set-url --delete
