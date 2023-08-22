@@ -1,0 +1,19 @@
+Agent - ip-172-31-34-211.ec2.internal
+
+Master - ip-172-31-91-218.ec2.internal
+
+ssh-keygen -t ed25519 - Master key generation command
+
+==========Java installation command========
+sudo apt update
+sudo apt install openjdk-17-jre
+java -version
+============Jenkins installa
+
+curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key | sudo tee \
+  /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
+  https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
+  /etc/apt/sources.list.d/jenkins.list > /dev/null
+sudo apt-get update
+sudo apt-get install jenkins
