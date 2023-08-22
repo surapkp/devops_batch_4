@@ -1,0 +1,53 @@
+If you want to remove all Docker-related entities, here's a breakdown:
+
+1. Remove all containers (running and stopped):
+   
+bash
+   docker rm -f $(docker ps -a -q)
+   
+
+2. Remove all images:
+   
+bash
+   docker rmi -f $(docker images -q)
+   
+
+3. Remove all volumes:
+   
+bash
+   docker volume rm $(docker volume ls -q)
+   
+
+4. Remove all networks (except default ones):
+   
+bash
+   docker network rm $(docker network ls | grep "bridge\|none\|host" -v | awk '{print $1}')
+   
+
+5. Remove all build cache:
+   
+bash
+   docker builder prune -af
+   
+
+6. Remove all unused data (containers, networks, volumes, and images):
+   
+bash
+   docker system prune -af
+
+7. If we want to remove unused images, we can use the -a flag.
+
+docker image prune -a
+
+8.  docker system prune
+docker system prune -a
+This will remove:
+  - all stopped containers
+  - all networks not used by at least one container
+  - all images without at least one container associated to them
+  - all build cache   
+
+Note: 
+- The -f flag is used to force the removal.
+- The -a flag is used to target all items, not just dangling ones.
+- Always be cautious when using these commands, especially in production environments, as they will delete data permanently. Ensure you have backups if necessary.
