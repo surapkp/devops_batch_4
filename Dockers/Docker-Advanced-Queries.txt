@@ -1,0 +1,37 @@
+Docker Deletion Command
+df -h
+docker images
+docker ps
+df -h
+docker system prune
+docker container prune
+df -h
+docker image prune --all 
+df -h
+
+
+Docker Run Command--->
+
+docker run -d -p 8000:8000 django-app
+
+Pwd - /home/ubuntu/docker-projects/django-app/django-todo-cicd
+
+Docker Volume creation-->
+
+pwd - /home/ubuntu/docker-projects/volumes/django-app-volume
+
+django-app-volume
+
+docker volume ls
+
+docker volume create --name django-app-volume --opt type=none 
+--opt device=/home/ubuntu/docker-projects/volumes/django-app-volume --opt o=bind
+
+For mount the volume of container in my local machine
+
+docker run -d --mount source=django-app-volume,target=/data -p 8000:8000 django-app:latest
+
+----To go inside the container
+
+$ docker exec -it 51033c75c2ba bash
+bash-4.2# mysql -u root -p
