@@ -4,4 +4,6 @@ git status
 git log
 git clone
 git remote -v
-
+git pull
+git fetch
+git push
